@@ -39,7 +39,7 @@ LoveStory
 ## 备注
 [](#注意事项)
 
-### License许可
+## License许可
 
 [![Snjun](https://img.shields.io/travis/rust-lang/rust.svg)](http://snjun.me/)
 

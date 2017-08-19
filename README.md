@@ -43,7 +43,7 @@ LoveStory
 
 [![Snjun](https://img.shields.io/travis/rust-lang/rust.svg)](http://snjun.me/)
 
-© 2015~2017 A [Snjun](http://snjun.me/)'s [loveStory](https://snjun.me/love).  This code is distributed under the MIT license. See `LICENSE` in this directory.
+© 2015~2017 A [Snjun](http://snjun.me/)'s [loveStory](http://snjun.me/love).  This code is distributed under the MIT license. See `LICENSE` in this directory.
 
 [大威&小炜's Story](http://tianji.me/love/) Copyright (c) 2016 Zhang Lianwei
 

@@ -46,7 +46,7 @@ LoveStory
 
 © 2015~2017 A [Snjun](http://snjun.me/)'s [snjun.github.io](https://github.com/snjun/snjun.github.io/).  This code is distributed under the MIT license. See `LICENSE` in this directory.
 
-[大威&小炜's Story]http://tianji.me/love/) Copyright (c) 2016 Zhang Lianwei
+[大威&小炜's Story](http://tianji.me/love/) Copyright (c) 2016 Zhang Lianwei
 
 [胡猫熊&overmind1980's Story](http://oeasy.org/love/) Copyright (c) 2014 overmind1980
 

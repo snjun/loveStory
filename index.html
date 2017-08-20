@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>My Love Story - Snjun的追寻 </title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <!--请注意：以下资源均开启防盗链保护，故请勿直接调用，否则可能会出现加载异常-->
+    <link type="text/css" rel="stylesheet" href="./css/style.css">
+    <style type="text/css">
+        <!--
+        .STYLE1 {
+            color: #666666
+        }
+        -->
+    </style>
+</head>
+<body>
+<audio autoplay="autoplay" loop="loop" id="bgm">
+    <source src="http://oeasy.org/music/iloveu.mp3" type="audio/mp3" >
+</audio>
+<div id="main">
+    <div id="error">本页面采用HTML5编辑，目前您的浏览器无法显示，请换成谷歌(<a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>)或者火狐(<a href="http://firefox.com.cn/download/">Firefox</a>)浏览器，或者其他游览器的最新版本。</div>
+    <div id="wrap">
+        <div id="text">
+            <div id="code">
+                <span class="say"> My Story</span><br>
+                <span class="say"> </span><br>
+                <span class="say"> For  丈母娘的女儿 &  Snjun </span><br>
+                <span class="say"> </span><br>
+                <span class="say"> <font color="cc1883">还记得刚好遇见你的时候吗, 或许是缘分, 或许是注定的。</font></span><br>
+                <span class="say"> </span><br>
+                <span class="say"> <font color="cc1883">那天, 动车在途中遇到大雨冰雹, 晚点。</font></span><br>
+                <span class="say"> </span><br>
+                <span class="say"> <font color="FF0000">我们在偌大的车站等了2个多小时, 到终点时都已经很晚了。</font></span><br>
+                <span class="say"> </span><br>
+                <span class="say"> <font color="red">就这样直到与你的惊鸿一面, 我才明白这一切的意义。</font></span><br>
+                <span class="say"> </span><br>
+                <span class="say"> <font color="FF00FA">或许你已不记得了, 但你的那一颦一笑仍深深地触动着我。</font></span><br>
+                <span class="say"> </span><br>
+                <span class="say"> <font color="FF00FA">忆起你那灵动、你那活波和你那俏皮, 还有那落落大方。</font></span><br>
+                <span class="say"> </span><br>
+                <span class="say"> <font color="F16D7E">如今依然如在眼帘。但是。。。 </font></span><br>
+                <span class="say"> </span><br>
+                <span class="say"> <font color= F16D7E>你是谁啊？你在哪里？我好想你！</font></span><br>
+                <span class="say"> </span><br>
+                <span class="say"> <span class="space"></span><span class="space"></span>By Snjun</span>
+            </div>
+        </div>
+        <div id="clock-box">
+            Snjun<span class="STYLE1">遇到</span>XXX<span class="STYLE1">已经是</span>
+            <div id="clock"></div>
+        </div>
+        <canvas id="canvas" width="1100" height="680"></canvas>
+    </div>
+</div>
+
+<canvas id="c_n8" width="949" height="923"
+        style="position: fixed; top: 0px; left: 0px; z-index: -10;"></canvas>
+<p style="text-align:center;">©2017-2018
+    <a href="http://snjun.me/love">吾爱之追寻</a>&nbsp;我的链接：
+    <a href="http://snjun.me" target="_blank">Snjun</a>&nbsp;
+    <!-- <a href="http://snjun.me" target="_blank">FFF</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -->
+    <img src="./img/beian.png">
+    <a href="http://www.miibeian.gov.cn/"target="_blank" rel="nofollow">蜀ICP备17026209号 </a>&nbsp;
+</p>
+
+<script type="text/javascript" src="./plugin/jquery-3.1.1.js"></script>
+<script type="text/javascript" src="./plugin/wind/jscex.js"></script>
+<script type="text/javascript" src="./plugin/wind/jscex-parser.js"></script>
+<script type="text/javascript" src="./plugin/wind/jscex-jit.js"></script>
+<script type="text/javascript" src="./plugin/wind/jscex-builderbase.js"></script>
+<script type="text/javascript" src="./plugin/wind/jscex-async.js"></script>
+<script type="text/javascript" src="./plugin/wind/jscex-async-powerpack.js"></script>
+<script type="text/javascript" src="./plugin/canvas-nest.js" color="255,0,0" opacity="30" count="99"></script>
+<!--<script type="text/javascript" src="./plugin/canvas-nest.js"></script>-->
+<script type="text/javascript" src="./js/functions.js" charset="utf-8"></script>
+<script type="text/javascript" src="./js/love.js" charset="utf-8"></script>
+<script>
+    function audioAutoPlay(id) {
+        var audio = document.getElementById(id),
+            play = function () {
+                audio.play();
+                document.removeEventListener("touchstart", play, false);
+            };
+        audio.play();
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            play();
+        }, false);
+        document.addEventListener('YixinJSBridgeReady', function () {
+            play();
+        }, false);
+        document.addEventListener("touchstart", play, false);
+    }
+    audioAutoPlay('bgm');
+
+    // var audioPlay=document.getElementById("bgm");
+    // document.addEventListener('touchstart', function(){
+    //     audioPlay.play();
+    // }, false);
+</script>
+<script>
+    (function () {
+        var canvas = $('#canvas');
+
+        if (!canvas[0].getContext) {
+            $("#error").show();
+            return false;
+        }
+
+        var width = canvas.width();
+        var height = canvas.height();
+
+        canvas.attr("width", width);
+        canvas.attr("height", height);
+
+        var opts = {
+            seed: {
+                x: width / 2 - 20,
+                color: "rgb(190, 26, 37)",
+                scale: 2
+            },
+            branch: [
+                [535, 680, 570, 250, 500, 200, 30, 100, [
+                    [540, 500, 455, 417, 340, 400, 13, 100, [
+                        [450, 435, 434, 430, 394, 395, 2, 40]
+                    ]],
+                    [550, 445, 600, 356, 680, 345, 12, 100, [
+                        [578, 400, 648, 409, 661, 426, 3, 80]
+                    ]],
+                    [539, 281, 537, 248, 534, 217, 3, 40],
+                    [546, 397, 413, 247, 328, 244, 9, 80, [
+                        [427, 286, 383, 253, 371, 205, 2, 40],
+                        [498, 345, 435, 315, 395, 330, 4, 60]
+                    ]],
+                    [546, 357, 608, 252, 678, 221, 6, 100, [
+                        [590, 293, 646, 277, 648, 271, 2, 80]
+                    ]]
+                ]]
+            ],
+            bloom: {
+                num: 700,
+                width: 1080,
+                height: 650,
+            },
+            footer: {
+                width: 1200,
+                height: 5,
+                speed: 10,
+            }
+        }
+
+        var tree = new Tree(canvas[0], width, height, opts);
+        var seed = tree.seed;
+        var foot = tree.footer;
+        var hold = 1;
+
+        canvas.click(function (e) {
+            var offset = canvas.offset(), x, y;
+            x = e.pageX - offset.left;
+            y = e.pageY - offset.top;
+            if (seed.hover(x, y)) {
+                hold = 0;
+                canvas.unbind("click");
+                canvas.unbind("mousemove");
+                canvas.removeClass('hand');
+            }
+        }).mousemove(function (e) {
+            var offset = canvas.offset(), x, y;
+            x = e.pageX - offset.left;
+            y = e.pageY - offset.top;
+            canvas.toggleClass('hand', seed.hover(x, y));
+        });
+
+        var seedAnimate = eval(Jscex.compile("async", function () {
+            seed.draw();
+            while (hold) {
+                $await(Jscex.Async.sleep(10));
+            }
+            while (seed.canScale()) {
+                seed.scale(0.95);
+                $await(Jscex.Async.sleep(10));
+            }
+            while (seed.canMove()) {
+                seed.move(0, 2);
+                foot.draw();
+                $await(Jscex.Async.sleep(10));
+            }
+        }));
+
+        var growAnimate = eval(Jscex.compile("async", function () {
+            do {
+                tree.grow();
+                $await(Jscex.Async.sleep(10));
+            } while (tree.canGrow());
+        }));
+
+        var flowAnimate = eval(Jscex.compile("async", function () {
+            do {
+                tree.flower(2);
+                $await(Jscex.Async.sleep(10));
+            } while (tree.canFlower());
+        }));
+
+        var moveAnimate = eval(Jscex.compile("async", function () {
+            tree.snapshot("p1", 240, 0, 610, 680);
+            while (tree.move("p1", 500, 0)) {
+                foot.draw();
+                $await(Jscex.Async.sleep(10));
+            }
+            foot.draw();
+            tree.snapshot("p2", 500, 0, 610, 680);
+
+            // 会有闪烁不得以这样做, (＞﹏＜)
+            canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
+            canvas.css("background", "#ffe");
+            $await(Jscex.Async.sleep(300));
+            canvas.css("background", "none");
+        }));
+
+        var jumpAnimate = eval(Jscex.compile("async", function () {
+            var ctx = tree.ctx;
+            while (true) {
+                tree.ctx.clearRect(0, 0, width, height);
+                tree.jump();
+                foot.draw();
+                $await(Jscex.Async.sleep(25));
+            }
+        }));
+
+        var textAnimate = eval(Jscex.compile("async", function () {
+            var together = new Date();
+            together.setFullYear(2017,7,4); //此处修改的话是倒计时算，04, -27 代表4月7日，如果是5月8日则05，22
+            together.setHours(22);          //小时
+            together.setMinutes(35);        //分钟
+            together.setSeconds(5);         //秒
+            together.setMilliseconds(20);   //毫秒
+
+            $("#code").show().typewriter();
+            $("#clock-box").fadeIn(500);
+            while (true) {
+                timeElapse(together);
+                $await(Jscex.Async.sleep(1000));
+            }
+        }));
+
+        var runAsync = eval(Jscex.compile("async", function () {
+            $await(seedAnimate());
+            $await(growAnimate());
+            $await(flowAnimate());
+            $await(moveAnimate());
+
+            textAnimate().start();
+
+            $await(jumpAnimate());
+        }));
+
+        runAsync().start();
+    })();
+</script>
+</body>
+
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?83d8cfd944c488320d3ac94271e32917";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+</html>

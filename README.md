@@ -11,9 +11,9 @@ LoveStory
 ### 说明文档的目录
 * [loveStory](#更新说明)
     * css
-        *  style.css
+        *  style.css
     * img
-        *  beian.png
+        *  beian.png
     * js
         *  functions.js
         *  love.js

@@ -27,8 +27,7 @@ LoveStory
     * 2017年08月20日 -- loveStory正式创建
 
 ### 截图展示
-[![201708210932]](http://snjun.me/love)
-![baidu](http://snjun.me/love/img/201708210932.png "百度logo")	
+![loveStory](http://snjun.me/love/img/201708210932.png "loveStory")	
 
 ### License许可
 

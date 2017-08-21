@@ -20,8 +20,17 @@ LoveStory
     * plugin
         *  wind
            * jscex.js
+           * jscex-parser.js
+           * jscex-jit.js
+           * jscex-builderbase.js
+           * jscex-async.js
+           * jscex-async-powerpack.js
         *  canvas-nest.js
         *  jquery-3.1.1.js
+    * favicon.ico
+    * index.html
+    * LICENSE
+    * README.md
 
 ### 更新说明
     * 2017年08月20日 -- loveStory正式创建

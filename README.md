@@ -10,10 +10,10 @@ LoveStory
 
 ### 说明文档的目录
 * [loveStory](#更新说明)
-    * css
+    * css
         *  style.css
-    * img
-        *  beian.png
+    * img
+        *  beian.png
     * js
         *  functions.js
         *  love.js

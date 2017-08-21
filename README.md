@@ -12,18 +12,14 @@ LoveStory
 * [loveStory](#更新说明)
     * css
         *  style.css
-        
     * img
         *  beian.png
-        
     * js
         *  functions.js
         *  love.js
-        
     * plugin
         *  wind
            * jscex.js
-           
         *  canvas-nest.js
         *  jquery-3.1.1.js
 

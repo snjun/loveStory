@@ -1,3 +1,8 @@
+/**
+* 功能：页面时间和文字书写
+* 最后审查日期：2017年8月21日
+* 开发人员：佚名
+**/
 // variables
 var $win = $(window);
 var clientWidth = $win.width();

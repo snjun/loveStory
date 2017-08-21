@@ -1,3 +1,8 @@
+/**
+* 功能：花瓣飘落
+* 最后审查日期：2017年8月21日
+* 开发人员：佚名
+**/
 (function (window) {
 
     function random(min, max) {

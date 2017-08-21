@@ -9,7 +9,7 @@ LoveStory
 *******
 
 ### 说明文档的目录
-* [loveStory](#更新说明)
+* [loveStory](http://snjun.me/love)
     * css
         *  style.css
     * img
@@ -27,7 +27,7 @@ LoveStory
     * 2017年08月20日 -- loveStory正式创建
 
 ### 截图展示
-[![201708210932]](http://snjun.me/love/img/)
+[![201708210932]](http://snjun.me/love)
 ![baidu](http://snjun.me/love/img/201708210932.png "百度logo")	
 
 ### License许可

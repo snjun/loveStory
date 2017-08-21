@@ -1,19 +1,27 @@
-`1`
 
 LoveStory
 =========
-这是一个纪念型的网页,这要对自己爱的一种展示,简单明了.
+`这是一个纪念型的网页,这要对自己爱的一种展示,简单明了.`
 
-*******
+******
 #### Author : Snjun
 #### E-mail : m1356997@sina.com
 *******
 
 ### 说明文档的目录
-(包含了项目的1,2,3,4..)
-* [标题1](#更新说明)
-    * 普通文本
-        *  换行
+* [loveStory](#更新说明)
+    * css
+        *  style.css
+    * img
+        *  beian.png
+    * js
+        *  functions.js
+        *  love.js
+    * plugin
+        *  wind
+           *jscex.js
+        *  canvas-nest.js
+        *  jquery-3.1.1.js
 
 这是普通文本
 * [标题2](#项目详情)

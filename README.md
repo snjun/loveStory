@@ -8,7 +8,7 @@ LoveStory
 #### E-mail : m1356997@sina.com
 *******
 
-### 说明文档的目录
+### 文件结构
 * [loveStory](http://snjun.me/love)
     * css
         *  style.css

@@ -27,7 +27,7 @@ LoveStory
     * 2017年08月20日 -- loveStory正式创建
 
 ### 截图展示
-[XX]:http://snjun.me/img/201708210932.png
+[XX]:https://github.com/snjun/loveStory/img/201708210932.png
 
 ### License许可
 

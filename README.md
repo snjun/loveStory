@@ -9,18 +9,34 @@ LoveStory
 *******
 
 ### 说明文档的目录
+<<<<<<< HEAD
 > [loveStory](#更新说明)
 >> css
 >> img
 >> js
 >> plugin
 >>>  wind
+=======
+* [loveStory](#更新说明)
+    * css
+        *  style.css
+    * img
+        *  beian.png
+    * js
+        *  functions.js
+        *  love.js
+    * plugin
+        *  wind
+           * jscex.js
+        *  canvas-nest.js
+        *  jquery-3.1.1.js
+>>>>>>> parent of 827f728... Update README.md
 
 ### 更新说明
     * 2017年08月20日 -- loveStory正式创建
 
 ### 截图展示
-![XX]:(https://github.com/snjun/loveStory/img/201708210932.png)
+[XX]:https://github.com/snjun/loveStory/img/201708210932.png
 
 ### License许可
 

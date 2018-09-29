@@ -34,9 +34,13 @@ LoveStory
 
 ### 更新说明
     * 2017年08月20日 -- loveStory正式创建
+    * 2018年09月29日 -- loveStory改为媛媛和谯谯
 
 ### 截图展示
 ![loveStory](http://snjun.me/love/img/201708210932.png  "loveStory")	
+
+### 页面展示
+https://snjun.github.io/loveStory/
 
 ### License许可
 
